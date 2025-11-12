@@ -11,21 +11,24 @@ thumbnail?:{ url: string}
 
 export interface Author {
     id:number;
-    name:string;
+    full_name:string;
+    avatar?: Image;
 }
 
-export interface BlogCategory {
+export interface Category {
     id: number;
     name: string;
+    slug: string;
 }
 
 export interface BlogPost{
     id: number;
     title: string;
     slug: string;
+    excerpt:string;
+    intro: string;
     publication_date: string;
-    banner_image: {url: string};
     author?: Author;
     cover?:Image;
-    blogpost_categories: BlogCategory[];
+    blogpost_categories?: Category[];
 }
