@@ -47,7 +47,7 @@ export const BlogGrid = () => {
   const total: number = countQuery.data ?? 0;
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-10">
+    <div className="max-w-8xl mx-auto px-6 py-10">
       <h1 className="tewxt-3xl font-bold mb-6">Viktor Blog</h1>
       <h5 className="pt-5 pb-5">
         Get the latest updates on news and announcements,

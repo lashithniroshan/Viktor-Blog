@@ -45,7 +45,7 @@ export const Pagination: React.FC<PaginationProps> = ({
         className={`px-4 py-2 rounded-md ${
           currentPage === 1
             ? "bg-gray-300 cursor-not-allowed"
-            : "bg-gray-200 hover:bg-gray-300"
+            : "bg-gray-200 hover:bg-gray-300 hover:border-gray-500"
         }`}
       >
         Previous
@@ -80,7 +80,7 @@ export const Pagination: React.FC<PaginationProps> = ({
         className={`px-4 py-2 rounded-md ${
           currentPage === totalPages
             ? "bg-gray-300 cursor-not-allowed"
-            : "bg-gray-200 hover:bg-gray-300"
+            : "bg-gray-200 hover:bg-gray-300 hover:border-gray-500"
         }`}
       >
         Next
