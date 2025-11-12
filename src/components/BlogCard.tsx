@@ -10,7 +10,7 @@ export const BlogCard = ({ blog }: { blog: BlogPost }) => {
   );
 
   return (
-    <div>
+    <div className="max-w-sm p-0 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <img
         src={medium}
         srcSet={
@@ -23,11 +23,11 @@ export const BlogCard = ({ blog }: { blog: BlogPost }) => {
         className="w-full h-48 object-cover"
       />
       <div className="p-4">
-        <p className="text-sm text-gray-700">
+        <p className="text-sm text-gray-700 font-bold text-left">
           {new Date(blog.publication_date).toLocaleDateString()}
         </p>
         {blog.author && (
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-2 pt-5">
             <img
               src={authorAvatar}
               alt={blog.author.full_name}
@@ -38,8 +38,8 @@ export const BlogCard = ({ blog }: { blog: BlogPost }) => {
             </span>
           </div>
         )}
-        <h3 className="text-lg font-semibold mb-2">{blog.title}</h3>
-        <p className="text-gray-600 mt-auto">{blog.excerpt}</p>
+        <h3 className="text-lg font-bold mb-2 text-left pt-5 pb-5">{blog.title}</h3>
+        <p className="text-gray-600 mt-auto text-left">{blog.excerpt}</p>
       </div>
     </div>
   );
