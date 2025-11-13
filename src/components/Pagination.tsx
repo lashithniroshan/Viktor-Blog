@@ -37,7 +37,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   const pageNumbers = getPageNumbers();
 
   return (
-    <div className="flex justify-center gap-2 mt-8 flex-wrap items-center">
+    <div className="pagination flex justify-center gap-2 mt-8 flex-wrap items-center">
       {/* previous button */}
       <button
         onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}

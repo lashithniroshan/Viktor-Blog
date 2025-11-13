@@ -29,7 +29,29 @@ export const SearchBar = ({ search, onSearchChange }: SearchBarProps) => {
         placeholder="Search by title..."
         value={localSearch}
         onChange={handleChange}
-        className="bg-gray-50 border py-3.5 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full"
+        className="w-full
+    appearance-none
+    px-4
+    py-2.5
+    text-sm
+    font-medium
+    text-gray-700
+    bg-white
+    border border-gray-300
+    rounded-lg
+    shadow-sm
+    focus:outline-none
+    focus:ring-1
+    focus:ring-blue-500
+    focus:border-blue-500
+    hover:border-blue-400
+    transition-all
+    duration-150
+    dark:bg-gray-800
+    dark:border-gray-600
+    dark:text-gray-100
+    dark:focus:ring-blue-400
+    dark:focus:border-blue-400 w-full"
       />
       {localSearch && (
         <button
